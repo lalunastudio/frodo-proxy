@@ -1,6 +1,6 @@
 # Frodo Proxy Service
 
-Tiny bun script to add host header to an endpoint.
+Tiny bun script to add host header to an endpoint. I use it for adding a Host header to a local environment setup when working with Next.js 14 App Router, because the version of fetch that Next.js uses strips the Host header. 
 
 To install dependencies:
 
@@ -13,5 +13,13 @@ To run:
 ```bash
 bun run index.ts
 ```
+or
 
-This project was created using `bun init` in bun v1.0.25. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+```bash
+npm start
+```
+
+
+### Known issues
+
+It only supports GET and POST as of now.
