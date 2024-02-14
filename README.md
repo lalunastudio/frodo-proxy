@@ -1,4 +1,6 @@
-# jysk-frodo
+# Frodo Proxy Service
+
+Tiny bun script to add host header to an endpoint.
 
 To install dependencies:
 
