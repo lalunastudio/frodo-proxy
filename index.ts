@@ -40,7 +40,7 @@ new Elysia()
     const fullPath = `${baseUrl}${path}?${paramString}`;
     const res = await fetch(fullPath, {
       headers: {
-        Host: 'dk-webshop-monorepo-master.dev.webshop.jysk.ninja',
+        Host: hostHeader || '',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(body || {}),
